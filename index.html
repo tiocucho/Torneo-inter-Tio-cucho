@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TORNEO INTER TIO CUCHO</title>
+<style>
+:root{--bg:#050505;--panel:#101010;--gold:#d8ad55;--gold2:#f1cd7a;--text:#f7f3ea;--muted:#aaa49a;--line:#4d4028;--green:#9cc9a6;--red:#8c6666}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 70% 0,#30240d 0,#0a0907 30%,#050505 70%);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif}.app{max-width:720px;margin:auto;padding:22px 16px 45px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;font-size:12px}.brand{color:var(--gold2);font-weight:900;letter-spacing:.14em}.live{border:1px solid #6a552c;border-radius:999px;padding:7px 10px;color:#ead69e}.eyebrow{color:var(--gold2);font-weight:900;letter-spacing:.2em;font-size:13px;margin-bottom:12px}h1{font-size:clamp(42px,9vw,68px);line-height:.94;letter-spacing:-.055em;font-weight:500;margin:0 0 16px}.sub{color:var(--muted);font-size:17px;line-height:1.45;margin:0}.price{margin:30px 0;padding:22px 26px;background:linear-gradient(135deg,#e9c56f,#a97827);color:#080706;border-radius:18px;box-shadow:0 12px 35px #0008}.price small{display:block;font-size:12px;font-weight:900;letter-spacing:.15em;margin-bottom:8px}.price strong{font-size:34px}.card{background:linear-gradient(180deg,#151515,#0d0d0d);border:1px solid #4a3b20;border-radius:24px;padding:23px 14px;box-shadow:0 25px 60px #0009}.kicker{color:var(--gold2);font-weight:900;letter-spacing:.16em;font-size:13px}h2{font-size:27px;font-weight:500;margin:7px 0 17px}.legend{display:flex;gap:16px;flex-wrap:wrap;color:#bdb7ac;font-size:13px;margin-bottom:12px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:-2px}.free{background:var(--gold2)}.held{background:#777}.confirmed{background:var(--green)}.counter{text-align:right;color:#aaa;margin-bottom:11px;font-size:13px}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.slot{min-height:78px;border:1px solid #62502d;border-radius:15px;background:#191713;color:var(--gold2);cursor:pointer;padding:10px}.slot:hover,.slot:active{border-color:var(--gold2);transform:translateY(-1px)}.num{display:block;font-size:23px;font-weight:900}.status{display:block;font-size:10px;color:#bcb5a9;margin-top:3px}.slot.held{background:#252525;color:#aaa;border-color:#555}.seat-help{margin:14px 0 4px;color:#e4d29e;font-size:15px;font-weight:900}.seat-help small{display:block;color:#8e887e;font-size:12px;font-weight:500;margin-top:4px}.slot.confirmed{background:#193025;color:var(--green);border-color:#466d51;cursor:not-allowed}.slot.selected{outline:3px solid #f1cd7a;background:#5b4315;box-shadow:0 0 0 2px #d8ad55 inset}.slot:not(.held):not(.confirmed):not(.selected){background:#263c2a;border-color:#6b9b6f;color:#f1cd7a}.form{display:grid;gap:11px;margin-top:22px}label{font-size:12px;color:#bdb7ac;font-weight:800}input{width:100%;padding:15px;border-radius:12px;border:1px solid #51442b;background:#090909;color:white;font-size:16px}.splitbox{border:1px solid #3f3421;border-radius:14px;padding:14px;background:#0b0b0b}.split-title{font-size:12px;font-weight:900;color:#bdb7ac;margin-bottom:10px}.split-options{display:grid;grid-template-columns:1fr 1fr;gap:8px}.split{border:1px solid #55472c;background:#15130f;color:#d7c184;border-radius:11px;padding:11px 7px;font-size:11px;font-weight:900;cursor:pointer}.split.active{background:#3a2b12;border-color:#e1b95f;color:#f1d38b}.second-wrap{margin-top:12px}.summary{display:flex;justify-content:space-between;gap:8px;padding:9px 0;color:#bbb;flex-wrap:wrap}.total strong{color:var(--gold2);font-size:20px}.primary{border:0;border-radius:13px;padding:16px;background:var(--gold2);color:#0b0905;font-size:16px;font-weight:900;cursor:pointer}.primary:disabled{opacity:.4}.timer{margin-top:20px;border:1px solid #3e3321;border-radius:14px;padding:15px;display:flex;justify-content:space-between}.timer b{color:var(--gold2);font-size:23px}.note{font-size:12px;color:#77716a;line-height:1.45}.error{font-size:12px;color:#e6a7a7;line-height:1.4}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;background:var(--gold2);color:#090806;padding:12px 18px;border-radius:99px;font-weight:900;transition:.2s;z-index:20}.toast.show{opacity:1;transform:translate(-50%,0)}footer{text-align:center;color:#625d55;font-size:11px;margin-top:20px}@media(max-width:430px){.app{padding:18px 10px}h1{font-size:43px}.grid{gap:6px}.slot{min-height:76px;padding:7px 3px}.num{font-size:21px}.status{font-size:9px}}
+</style>
+</head>
+<body>
+<main class="app">
+<div class="top"><div class="brand">INTERMEDIO TORNEOS</div><div class="live">● INICIO 10:00 HS</div></div>
+<section>
+<div class="eyebrow">INSCRIPCIONES ABIERTAS</div>
+<h1>TORNEO DE 60 —<br>18 PUESTOS<br>10:00 HS</h1>
+<p class="sub">Elegí tus puestos. Cuando alguien los reserve, todos los teléfonos los verán ocupados en tiempo real.</p>
+</section>
+<div class="price"><small>PRECIO POR PUESTO</small><strong>100.000 Gs.</strong></div>
+<section class="card">
+<div class="kicker">ELEGÍ TU LUGAR</div><h2>Puestos del torneo</h2>
+<div class="legend"><span><i class="dot free"></i>Disponible</span><span><i class="dot held"></i>Apartado</span><span><i class="dot confirmed"></i>Confirmado</span></div>
+<div class="counter" id="counter">18 de 18 lugares disponibles</div>
+<div class="seat-help">Elegí uno o más puestos <small>Los números libres se pueden seleccionar. Los ocupados quedan bloqueados.</small></div>
+<div class="grid" id="grid"><button type="button" class="slot" aria-label="Puesto 1"><span class="num">01</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 2"><span class="num">02</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 3"><span class="num">03</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 4"><span class="num">04</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 5"><span class="num">05</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 6"><span class="num">06</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 7"><span class="num">07</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 8"><span class="num">08</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 9"><span class="num">09</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 10"><span class="num">10</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 11"><span class="num">11</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 12"><span class="num">12</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 13"><span class="num">13</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 14"><span class="num">14</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 15"><span class="num">15</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 16"><span class="num">16</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 17"><span class="num">17</span><span class="status">Libre</span></button><button type="button" class="slot" aria-label="Puesto 18"><span class="num">18</span><span class="status">Libre</span></button></div>
+<div class="form">
+<label for="name">NOMBRE DEL PARTICIPANTE</label>
+<input id="name" placeholder="Nombre de la persona" autocomplete="name">
+<div class="splitbox">
+<div class="split-title">¿Cómo se reparten los puntos?</div>
+<div class="split-options">
+<button type="button" class="split active" id="onePerson">1 PERSONA<br><b>2 puntos</b></button>
+<button type="button" class="split" id="twoPeople">2 PERSONAS<br><b>1 punto c/u</b></button>
+</div>
+<div id="secondWrap" class="second-wrap" style="display:none">
+<label for="name2">SEGUNDA PERSONA</label>
+<input id="name2" placeholder="Nombre de la segunda persona" autocomplete="name">
+</div>
+</div>
+<div class="summary"><span>Puestos: <b id="selectedCount">0</b></span><span>Puntos: <b id="points">0</b></span><span class="total">Total: <strong id="total">0 Gs.</strong></span></div>
+<button class="primary" id="reserve" disabled>APARTAR PUESTOS</button>
+<p class="note">Cada puesto cuesta 100.000 Gs. y suma 2 puntos. Si lo comparten dos personas, cada una suma 1 punto.</p>
+<div id="error" class="error"></div>
+</div>
+<div class="timer"><span>Próximo inicio</span><b id="timer">--:--:--</b></div>
+</section>
+<footer>TORNEO INTER TIO CUCHO · 18 puestos</footer>
+</main>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+<script>
+const firebaseConfig={
+ apiKey:"AIzaSyBDaj8e38W8AOyR6yfNQ7AQoW5bf5i2J9Q",
+ authDomain:"torneo-tio-cucho.firebaseapp.com",
+ databaseURL:"https://torneo-tio-cucho-default-rtdb.firebaseio.com",
+ projectId:"torneo-tio-cucho",
+ storageBucket:"torneo-tio-cucho.firebasestorage.app",
+ messagingSenderId:"468748796216",
+ appId:"1:468748796216:web:2aef532476f612e96801cd",
+ measurementId:"G-2TZXHKNG6R"
+};
+
+const TOTAL=18,PRICE=100000;
+let seats={},selected=new Set(),splitMode="one",busy=false;
+let db=null,seatsRef=null,firebaseReady=false,authReady=false;
+
+try{
+  firebase.initializeApp(firebaseConfig);
+  db=firebase.database();
+  seatsRef=db.ref("players");
+  firebaseReady=true;
+}catch(e){
+  // Aunque Firebase no cargue, la grilla de 18 puestos debe mostrarse.
+  firebaseReady=false;
+}
+
+function render(){
+ const grid=document.querySelector("#grid");
+ grid.innerHTML="";
+ let available=0;
+ for(let i=1;i<=TOTAL;i++){
+   const data=seats[i];
+   const state=data ? (data.status==="confirmed"?"confirmed":"held") : "";
+   if(!data) available++;
+   const b=document.createElement("button");
+   b.className="slot "+state+(selected.has(i)?" selected":"");
+   b.disabled=!!data || busy;
+   b.innerHTML=`<span class="num">${String(i).padStart(2,"0")}</span><span class="status">${data?(data.status==="confirmed"?"Confirmado":"Apartado"):(selected.has(i)?"Seleccionado":"Libre")}</span>`;
+   if(!data)b.onclick=()=>{selected.has(i)?selected.delete(i):selected.add(i);render();update()};
+   grid.appendChild(b);
+ }
+ document.querySelector("#counter").textContent=`${available} de ${TOTAL} lugares disponibles`;
+}
+
+function update(){
+ const n=selected.size;
+ document.querySelector("#selectedCount").textContent=n;
+ document.querySelector("#points").textContent=n*2;
+ document.querySelector("#total").textContent=(n*PRICE).toLocaleString("es-PY")+" Gs.";
+ const name=document.querySelector("#name").value.trim();
+ const name2=document.querySelector("#name2").value.trim();
+ document.querySelector("#reserve").disabled=!n||!name||(splitMode==="two"&&!name2)||busy;
+}
+
+// Mostrar los 18 puestos inmediatamente. Firebase luego actualizará su estado en tiempo real.
+render();
+update();
+
+function showError(msg){document.querySelector("#error").textContent=msg||""}
+function toast(msg){const t=document.querySelector("#toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3000)}
+
+document.querySelector("#name").oninput=update;
+document.querySelector("#name2").oninput=update;
+
+document.querySelector("#onePerson").onclick=()=>{
+ splitMode="one";document.querySelector("#onePerson").classList.add("active");document.querySelector("#twoPeople").classList.remove("active");document.querySelector("#secondWrap").style.display="none";update();
+};
+document.querySelector("#twoPeople").onclick=()=>{
+ splitMode="two";document.querySelector("#twoPeople").classList.add("active");document.querySelector("#onePerson").classList.remove("active");document.querySelector("#secondWrap").style.display="block";update();
+};
+
+document.querySelector("#reserve").onclick=async()=>{
+ if(busy)return;
+ const name=document.querySelector("#name").value.trim();
+ const name2=document.querySelector("#name2").value.trim();
+ if(!selected.size||!name||(splitMode==="two"&&!name2))return;
+ busy=true;showError("");update();
+ const wanted=[...selected];
+ const reserved=[];
+ try{
+   for(const seat of wanted){
+     const ref=seatsRef.child(String(seat));
+     const result=await ref.transaction(current=>{
+       if(current!==null)return;
+       return {
+         seat:seat,
+         status:"held",
+         names:splitMode==="two"?[name,name2]:[name],
+         mode:splitMode,
+         points:splitMode==="two"?[1,1]:[2],
+         paid:false,
+         createdBy: firebase.auth().currentUser ? firebase.auth().currentUser.uid : "",
+         createdAt:firebase.database.ServerValue.TIMESTAMP
+       };
+     });
+     if(result.committed && result.snapshot.exists()) reserved.push(seat);
+     else throw new Error("El puesto "+seat+" ya fue tomado por otra persona.");
+   }
+   selected.clear();
+   document.querySelector("#name").value="";
+   document.querySelector("#name2").value="";
+   toast("¡Puesto(s) apartado(s) correctamente!");
+ }catch(e){
+   if(reserved.length)toast("Se apartaron: "+reserved.join(", "));
+   showError(e.message||"No se pudo guardar la reserva.");
+   selected.forEach(s=>{});
+ }
+ finally{busy=false;render();update();}
+};
+
+if(firebaseReady){
+  // Las reglas del proyecto pueden exigir usuario autenticado.
+  // Iniciamos sesión anónima automáticamente para que los puestos carguen.
+  const startRealtime=()=>{
+    seatsRef.on("value",snap=>{
+      seats=snap.val()||{};
+      render();update();
+    },err=>{
+      render();update();
+      showError("No se pudo actualizar en tiempo real: "+err.message);
+    });
+  };
+  try{
+    firebase.auth().onAuthStateChanged(user=>{
+      if(user){ authReady=true; startRealtime(); }
+    });
+    firebase.auth().signInAnonymously().catch(()=>{
+      // Si el acceso anónimo no está habilitado, intentamos leer la base igualmente.
+      startRealtime();
+    });
+  }catch(e){
+    startRealtime();
+  }
+}
+
+// Re-render al cargar para que nunca quede la pantalla en “Cargando puestos…”.
+render();
+update();
+
+function tick(){
+ const now=new Date(),target=new Date(now);
+ target.setHours(10,0,0,0);
+ if(target<=now)target.setDate(target.getDate()+1);
+ let s=Math.floor((target-now)/1000),h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
+ document.querySelector("#timer").textContent=[h,m,x].map(v=>String(v).padStart(2,"0")).join(":");
+}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
